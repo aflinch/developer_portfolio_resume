@@ -42,10 +42,8 @@ export default function HeroSection() {
                         <span className="hero-section-title-sub-color">Developer</span>
                     </h1>
                     <p className="hero-section-description">
-                        Full-stack developer with 6+ years building, testing, and delivering production software.
-                        <br /> I hold a Master’s degree in Software Development from Boston University
-                        and an undergraduate degree in Informatics from Indiana University, providing a strong foundation
-                        in software engineering, systems thinking, and applied computing.
+                        Crafting reliable enterprise applications with Java, React, and GraphQL.
+                        Grounded in strong engineering principles, driven by automation.
                     </p>
                 </div>
                 <span className="hero-section-buttons">
