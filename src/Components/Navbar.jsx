@@ -89,18 +89,6 @@ function Navbar() {
                                     ? "navbar-content navbar-active-content"
                                     : "navbar-content"
                             }
-                            to="/AboutMe">
-                            About
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            onClick={closeMenu}
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "navbar-content navbar-active-content"
-                                    : "navbar-content"
-                            }
                             to="/ContactMe">
                             Contact
                         </NavLink>
