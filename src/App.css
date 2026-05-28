@@ -357,14 +357,12 @@ h3 {
     display: flex;
     color: var(--heading-color);
     gap: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 32px;
 }
-.about-education-title {
+.about-experience {
     color: var(--primary);
-}
-.about-experience-title {
-    color: var(--primary);
+    text-align: center;
 }
 
 /* Skills Section */

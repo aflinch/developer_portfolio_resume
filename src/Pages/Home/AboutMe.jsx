@@ -36,14 +36,14 @@ export default function AboutMe() {
                             </p>
                         </div>
                         <div className="about-experience-section">
-                                <span className="about-education">
-                                    <h2 className="about-education-title">5+</h2>
-                                    Years of Education
-                                </span>
-                            <span className="about-experience">
-                                    <h2 className="about-experience-title">6+</h2>
-                                    Years of Experience
-                                </span>
+                            <span>
+                                <h2 className="about-experience">5+</h2>
+                                Years of Education
+                            </span>
+                            <span>
+                                <h2 className="about-experience">6+</h2>
+                                Years of Experience
+                            </span>
                         </div>
                     </div>
                 </div>
