@@ -291,7 +291,7 @@ h3 {
 .about-section-info {
     display: flex;
     flex-direction: column;
-    padding: 32px;
+    padding: 21.333px;
     width: 100%;
     background: var(--bg-shade);
     border-radius: 20px;
