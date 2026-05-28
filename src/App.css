@@ -256,13 +256,118 @@ h3 {
     height: 100%;
 }
 
+/* About Me Section */
+.about-section-content {
+    display: flex;
+    padding: 35px 85.333px 85.333px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 76.667px;
+}
+.about-section-heading {
+    color: var(--heading-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+}
+.about-section-sub-color {
+    color: var(--primary);
+}
+.about-section-title {
+    color: var(--heading-color);
+    font-size: 44.667px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+.about-section-content-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.about-section-info {
+    display: flex;
+    flex-direction: column;
+    padding: 21.333px;
+    width: 100%;
+    background: var(--bg-shade);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+.about-section-description-title {
+    color: var(--heading-color);
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+.about-section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+.about-section-img {
+    flex: 0.65;
+    display: flex;
+    justify-content: flex-start;
+}
+.about-section-description {
+    color: var(--darkblue);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 8px;
+}
+.about-experience-section {
+    display: flex;
+    color: var(--heading-color);
+    gap: 30px;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+.about-experience {
+    color: var(--primary);
+    text-align: center;
+}
+
 /* Skills Section */
 .skills-section {
     display: flex;
-    padding: 50px 85.333px 85.333px;
+    padding: 15px 85.333px 85.333px;
     flex-direction: column;
     justify-content: center;
-    align-items: anchor-center;
+    align-items: center;
     gap: 76.667px;
 }
 .skills-section-heading {
@@ -297,7 +402,6 @@ h3 {
     align-items: flex-start;
     gap: 12px;
     flex: 1 0 0;
-
     transition: transform 0.3s;
 }
 .skills-section-card-title {
@@ -356,9 +460,11 @@ h3 {
 }
 .footer-contact-title {
     margin-bottom: 10.333px;
+    color: var(--heading-color);
 }
 .footer-contact-info {
     display: flex;
+    color: var(--heading-color);
     gap: 8px;
     margin-bottom: 8.33px;
     font-size: 15px;
@@ -372,6 +478,9 @@ h3 {
     height: 1.333px;
     width: 100%;
     background: rgba(40, 41, 56, 0.55);
+}
+.footer-section-copyright {
+    color: var(--heading-color);
 }
 
 /* Modal */
