@@ -3,6 +3,7 @@ import SkillsModel from '../../Components/SkillsModel';
 import {useState} from "react";
 import { FaJava, FaPython, FaReact, FaDatabase } from "react-icons/fa";
 import { SiPostgresql, SiJavascript } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 export default function MySkills() {
     const [showModel, setShowModel] = useState(false);
@@ -14,7 +15,9 @@ export default function MySkills() {
         Javascript: SiJavascript,
         SQL: FaDatabase,
         React: FaReact,
-        Postgres: SiPostgresql
+        Postgres: SiPostgresql,
+        CSharp: TbBrandCSharp,
+        "C#": TbBrandCSharp
     };
 
     return (
@@ -32,11 +35,8 @@ export default function MySkills() {
                             setSelectedSkill(item);
                             setShowModel(true);
                         }}>
-                            <div className="skills-section-img">
-                                {IconComponent ? <IconComponent /> : null}
-                            </div>
-                            <div className="skills-section-card-contnet">
-                                <h3 className="skills-section-card-title">{item.title}</h3>
+                            <div className="skills-section-card-content">
+                                <h3 className="skills-section-card-title">{IconComponent ? <IconComponent /> : null} {item.title}</h3>
                                 <p className="skills-section-card-description">{item.description}</p>
                             </div>
                         </div>
