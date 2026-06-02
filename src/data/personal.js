@@ -1,8 +1,11 @@
-{
+import project1Img from "./img/project-1.png";
+import project2Img from "./img/project-2.png";
+
+const personal = {
   "projects": [
     {
       "id": "1",
-      "src": "./Project1.png",
+      "src": project1Img,
       "title": "Course Management System",
       "tags": ["Java", "UML"],
       "description": "Engineered class hierarchies and reusable interfaces to model complex academic workflows.",
@@ -10,7 +13,7 @@
     },
     {
       "id": "2",
-      "src": "./Project2.png",
+      "src": project2Img,
       "title": "Video Game Collection Database",
       "tags": ["SQL", "ERD"],
       "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
@@ -18,11 +21,13 @@
     },
     {
       "id": "3",
-      "src": "./Project2.png",
+      "src": project2Img,
       "title": "Video Game Collection Database",
       "tags": ["SQL", "ERD"],
       "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
-      "url": "https://github.com/aflinch/react-resume-alex_flinchum"
+      "url": "https://github.com"
     }
   ]
-}
+};
+
+export default personal;

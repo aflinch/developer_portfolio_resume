@@ -15,8 +15,12 @@ h1,h2,h3,h4,h5,h6,p {
     --primary-shadow: #3470ccbf;
     --heading-color: #1a1c23;
     --bg-shade: #f4f6f9;
-    --github: #4a5568;
+    --github: #e62872;
     --darkblue: #0f111a;
+
+    --card: #fcfdfd;
+    --off-card: #d4d8d8;
+    --card-tag: #606666;
 
     --black: #000000;
     --white: #ffffff;
@@ -44,33 +48,35 @@ h1,h2,h3,h4,h5,h6,p {
 .sub-color {
     color: var(--primary);
 }
-.btn {
-    font-family: "Arial", Helvetica, sans-serif;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    color: var(--primary);
-    background-color: var(--bg-shade);
-    border: solid var(--primary);
-    border-radius: 5px;
-    position: relative;
-
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s;
-
-    display: flex;
+.project-card-link, .btn {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn {
+    color: var(--primary);
+    background-color: var(--bg-shade);
+    border-color: var(--primary);
 }
 .btn:hover {
     background-color: var(--primary);
     color: var(--off-white);
-    transform: scale(1.05);
+    transform: translateY(-3px);
 }
-
 .link {
     width: 36px;
     height: 36px;
@@ -365,15 +371,13 @@ h3 {
     flex-direction: column;
     padding: 21.333px;
     width: 100%;
-    background: var(--bg-shade);
     border-radius: 20px;
     z-index: 2;
 }
 .about-block-title {
     color: var(--heading-color);
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 26px;
+    font-size: 23px;
+    line-height: 25px;
     padding-bottom: 10px;
     text-decoration: underline;
 }
@@ -383,8 +387,7 @@ h3 {
 .about-section-description {
     color: var(--darkblue);
     font-size: 17px;
-    font-weight: 400;
-    line-height: 26px;
+    line-height: 23px;
     padding-bottom: 10px;
     position: relative;
 }
@@ -547,6 +550,20 @@ h3 {
     position: relative;
     background-color: var(--off-white);
     z-index: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.projects-section::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: -15%;
+    transform: translateY(-50%) rotate(5deg);
+    width: 105%;
+    height: 85%;
+    border-radius: 95%;
+    background: var(--primary-shadow);
+    pointer-events: none;
 }
 .projects-section-content {
     display: flex;
@@ -574,12 +591,77 @@ h3 {
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(450px, 300px));
-    gap: 15px;
+    gap: 85px;
     width: 100%;
 }
+.projects-section-img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+.projects-section-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .projects-section-card {
+    display: flex;
     flex: 1 1 350px;
     max-width: 450.333px;
+    z-index: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    background: var(--card);
+    box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.projects-section-card-tag {
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    color: var(--card-tag);
+    background-color: var(--card);
+    border: 2px solid var(--off-card);
+    border-radius: 12px;
+    position: relative;
+}
+.projects-section-card-tags-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.projects-section-card-content {
+    display: flex;
+    padding: 9px 32px;
+    flex-direction: column;
+    gap: 10px;
+    align-self: stretch;
+}
+.projects-section-card-title {
+    font-size: 18px;
+    color: var(--heading-color);
+}
+.projects-section-card-description {
+    font-size: 15px;
+    color: var(--darkblue);
+}
+.project-card-link {
+    color: var(--github);
+    background-color: var(--card);
+    border-color: var(--github);
+}
+.project-card-link:hover {
+    background-color: var(--github);
+    color: var(--card);
+    transform: scale(1.05);
 }
 
 /* Footer */
