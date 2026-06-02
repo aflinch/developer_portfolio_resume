@@ -486,9 +486,9 @@ h3 {
 }
 .skills-section-content {
     display: flex;
-    padding: 15px 12vh 25.333px;
+    padding: 10px 12vh 25.333px;
     flex-direction: column;
-    gap: 42.667px;
+    gap: 28.667px;
 }
 .skills-section-heading {
     color: var(--heading-color);
@@ -511,7 +511,7 @@ h3 {
     display: grid;
     justify-content: center;
     align-items: center;
-    gap: 22.6px;
+    gap: 20.6px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     width: 100%;
 }

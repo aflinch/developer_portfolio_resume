@@ -49,6 +49,18 @@
       "category": "backend"
     },
     {
+      "id": "10",
+      "title": "GO",
+      "level": 60,
+      "category": "backend"
+    },
+    {
+      "id": "20",
+      "title": "MongoDB",
+      "level": 50,
+      "category": "backend"
+    },
+    {
       "id": "11",
       "title": "SpringBoot",
       "level": 90,
@@ -103,6 +115,12 @@
       "category": "frontend"
     },
     {
+      "id": "21",
+      "title": "Azure",
+      "level": 65,
+      "category": "tool"
+    },
+    {
       "id": "22",
       "title": "Git",
       "level": 90,
@@ -112,6 +130,18 @@
       "id": "23",
       "title": "Unity",
       "level": 75,
+      "category": "tool"
+    },
+    {
+      "id": "24",
+      "title": "Jira",
+      "level": 85,
+      "category": "tool"
+    },
+    {
+      "id": "25",
+      "title": "Unreal Engine",
+      "level": 65,
       "category": "tool"
     }
   ]

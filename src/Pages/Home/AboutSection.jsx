@@ -1,7 +1,9 @@
 import React from "react";
+import data from '../../data/index.json';
 import {NavLink} from "react-router-dom";
 
 export default function AboutSection() {
+    const totalSkillsCount = data?.skills?.length || 0;
 
     return (
         <section id="aboutMe" className="about-section">
@@ -23,6 +25,10 @@ export default function AboutSection() {
                         <div className="stat-box">
                             <h2 className="about-experience">6+</h2>
                             <p>Years of Experience</p>
+                        </div>
+                        <div className="stat-box">
+                            <h2 className="about-experience">{totalSkillsCount}+</h2>
+                            <p>Technical Skills</p>
                         </div>
                     </div>
 

@@ -2,44 +2,33 @@ import data from '../../data/index.json';
 import SkillsModel from '../../Components/SkillsModel';
 import React, {useState} from "react";
 import {
-    FaJava,
-    FaPython,
-    FaReact,
-    FaDatabase,
-    FaGitAlt,
-    FaHtml5,
-    FaCss3Alt,
-    FaPhp,
-    FaLaravel,
-    FaAngular,
-    FaUnity
-} from "react-icons/fa";
+    FaJava, FaPython, FaReact, FaDatabase, FaGitAlt,
+    FaHtml5, FaCss3Alt, FaPhp, FaLaravel, FaAngular,
+    FaUnity, FaJira, FaGolang
+} from "react-icons/fa6";
 import {
-    SiPostgresql,
-    SiJavascript,
-    SiGraphql,
-    SiDotnet,
-    SiSpringboot,
-    SiTypescript,
-    SiCplusplus
+    SiPostgresql, SiJavascript, SiGraphql, SiDotnet,
+    SiSpringboot, SiTypescript, SiCplusplus, SiMongodb,
+    SiUnrealengine
 } from "react-icons/si";
-import { TbBrandCSharp } from "react-icons/tb";
+import { VscAzure, VscSymbolMethod} from "react-icons/vsc";
 
 export default function SkillsSection() {
     const [showModel, setShowModel] = useState(false);
     const [selectedSkill, setSelectedSkill] = useState(null);
-    const [activeCategory, setActiveCategory] = useState("tll");
+    const [activeCategory, setActiveCategory] = useState("all");
 
     const iconMap = {
         // Backend
         "Java": FaJava,
-        "C#": TbBrandCSharp,
+        "C#": VscSymbolMethod,
         "GraphQL": SiGraphql,
         "SQL": FaDatabase,
         "PostgreSQL": SiPostgresql,
         "Python": FaPython,
         "C++": SiCplusplus,
         "PHP": FaPhp,
+        "GO": FaGolang,
 
         // Frameworks
         "SpringBoot": SiSpringboot,
@@ -56,7 +45,11 @@ export default function SkillsSection() {
 
         // Tools
         "Git": FaGitAlt,
-        "Unity": FaUnity
+        "Unity": FaUnity,
+        "Unreal Engine": SiUnrealengine,
+        "MongoDB": SiMongodb,
+        "Azure": VscAzure,
+        "Jira": FaJira
     };
 
     const categories = ["all", "frontend", "backend", "framework", "tool"];
