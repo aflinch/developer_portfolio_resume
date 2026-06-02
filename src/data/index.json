@@ -3,57 +3,116 @@
     {
       "id": "1",
       "title": "Java",
-      "description": "10 Years of Experience"
+      "level": 95,
+      "category": "backend"
+    },
+    {
+      "id": "2",
+      "title": "C#",
+      "level": 88,
+      "category": "backend"
     },
     {
       "id": "3",
-      "title": "C#",
-      "description": "10 Years of Experience"
+      "title": "GraphQL",
+      "level": 85,
+      "category": "backend"
     },
     {
       "id": "4",
       "title": "SQL",
-      "description": "10 Years of Experience"
+      "level": 90,
+      "category": "backend"
     },
     {
       "id": "5",
+      "title": "PostgreSQL",
+      "level": 85,
+      "category": "backend"
+    },
+    {
+      "id": "6",
+      "title": "Python",
+      "level": 80,
+      "category": "backend"
+    },
+    {
+      "id": "8",
+      "title": "C++",
+      "level": 70,
+      "category": "backend"
+    },
+    {
+      "id": "9",
+      "title": "PHP",
+      "level": 78,
+      "category": "backend"
+    },
+    {
+      "id": "11",
+      "title": "SpringBoot",
+      "level": 90,
+      "category": "framework"
+    },
+    {
+      "id": "12",
+      "title": ".NET",
+      "level": 85,
+      "category": "framework"
+    },
+    {
+      "id": "13",
+      "title": "Laravel",
+      "level": 70,
+      "category": "framework"
+    },
+    {
+      "id": "14",
+      "title": "Angular",
+      "level": 80,
+      "category": "framework"
+    },
+    {
+      "id": "15",
       "title": "React",
-      "description": "10 Years of Experience"
+      "level": 85,
+      "category": "frontend"
     },
     {
-      "id": "6",
-      "title": "Python",
-      "description": "10 Years of Experience"
+      "id": "16",
+      "title": "JavaScript",
+      "level": 88,
+      "category": "frontend"
     },
     {
-      "id": "7",
-      "title": "Postgres",
-      "description": "10 Years of Experience"
+      "id": "17",
+      "title": "HTML",
+      "level": 90,
+      "category": "frontend"
     },
     {
-      "id": "6",
-      "title": "Python",
-      "description": "10 Years of Experience"
+      "id": "18",
+      "title": "CSS",
+      "level": 88,
+      "category": "frontend"
     },
     {
-      "id": "6",
-      "title": "Python",
-      "description": "10 Years of Experience"
+      "id": "19",
+      "title": "TypeScript",
+      "level": 85,
+      "category": "frontend"
     },
     {
-      "id": "6",
-      "title": "Python",
-      "description": "10 Years of Experience"
+      "id": "22",
+      "title": "Git",
+      "level": 90,
+      "category": "tool"
     },
     {
-      "id": "6",
-      "title": "Python",
-      "description": "10 Years of Experience"
-    },
-    {
-      "id": "6",
-      "title": "Python",
-      "description": "10 Years of Experience"
+      "id": "23",
+      "title": "Unity",
+      "level": 75,
+      "category": "tool"
     }
   ]
 }

@@ -1,8 +1,28 @@
 import data from '../../data/index.json';
 import SkillsModel from '../../Components/SkillsModel';
 import React, {useState} from "react";
-import { FaJava, FaPython, FaReact, FaDatabase } from "react-icons/fa";
-import { SiPostgresql, SiJavascript } from "react-icons/si";
+import {
+    FaJava,
+    FaPython,
+    FaReact,
+    FaDatabase,
+    FaGitAlt,
+    FaHtml5,
+    FaCss3Alt,
+    FaPhp,
+    FaLaravel,
+    FaAngular,
+    FaUnity
+} from "react-icons/fa";
+import {
+    SiPostgresql,
+    SiJavascript,
+    SiGraphql,
+    SiDotnet,
+    SiSpringboot,
+    SiTypescript,
+    SiCplusplus
+} from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 
 export default function SkillsSection() {
@@ -10,14 +30,32 @@ export default function SkillsSection() {
     const [selectedSkill, setSelectedSkill] = useState(null);
 
     const iconMap = {
-        Java: FaJava,
-        Python: FaPython,
-        Javascript: SiJavascript,
-        SQL: FaDatabase,
-        React: FaReact,
-        Postgres: SiPostgresql,
-        CSharp: TbBrandCSharp,
-        "C#": TbBrandCSharp
+        // Backend
+        "Java": FaJava,
+        "C#": TbBrandCSharp,
+        "GraphQL": SiGraphql,
+        "SQL": FaDatabase,
+        "PostgreSQL": SiPostgresql,
+        "Python": FaPython,
+        "C++": SiCplusplus,
+        "PHP": FaPhp,
+
+        // Frameworks
+        "SpringBoot": SiSpringboot,
+        ".NET": SiDotnet,
+        "Laravel": FaLaravel,
+        "Angular": FaAngular,
+
+        // Frontend
+        "React": FaReact,
+        "JavaScript": SiJavascript,
+        "HTML": FaHtml5,
+        "CSS": FaCss3Alt,
+        "TypeScript": SiTypescript,
+
+        // Tools
+        "Git": FaGitAlt,
+        "Unity": FaUnity
     };
 
     return (
