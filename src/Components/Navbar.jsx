@@ -84,7 +84,7 @@ function Navbar() {
                                     ? "navbar-content navbar-active-content"
                                     : "navbar-content"
                             }
-                            to="/ContactMe">
+                            to="/Contact">
                             Contact
                         </NavLink>
                     </li>
