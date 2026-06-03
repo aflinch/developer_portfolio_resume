@@ -1,5 +1,5 @@
 import data from '../../data/index.json';
-import SkillsModel from '../../Components/SkillsModel';
+import SkillsModal from '../../Components/SkillsModal';
 import React, {useState} from "react";
 import {
     FaJava, FaPython, FaReact, FaDatabase, FaGitAlt,
@@ -91,17 +91,17 @@ export default function SkillsSection() {
                                 <div className="skills-section-card-content">
                                     <h3 className="skills-section-card-title">{IconComponent ? <IconComponent /> : null} {item.title}</h3>
                                 </div>
-                                <div className="skills-section-card-progress-bar">
-                                    <div className="skills-section-card-progress" style={{ width: `${item.level}%` }}></div>
+                                <div className="skills-progress-bar">
+                                    <div className="skills-progress" style={{ width: `${item.level}%` }}></div>
                                 </div>
-                                <p className="skills-section-card-progress-num">{item.level}%</p>
+                                <p>{item.level}%</p>
                             </div>
                         );
                     })
                     : null
                     }
                 </div>
-                {showModel && <SkillsModel
+                {showModel && <SkillsModal
                     skill={selectedSkill}
                     iconComponent={iconMap[selectedSkill.title]}
                     onClose={() => {

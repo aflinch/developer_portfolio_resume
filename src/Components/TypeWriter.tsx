@@ -61,12 +61,12 @@ export function TypewriterTitle({ texts }: TypewriterProps) {
             <motion.span>{baseText}</motion.span>
 
             {/* The highlighted last word */}
-            <motion.span className="hero-section-title-sub-color">
+            <motion.span className="sub-color">
                 {highlightedWord}
             </motion.span>
 
             {/* Blinking Cursor */}
-            <motion.span className="hero-section-title-sub-color"
+            <motion.span className="sub-color"
                 animate={{ opacity: [0, 1, 0] }}
                 transition={{ repeat: Infinity, duration: 0.8, ease: "linear" }}
                 style={{ fontWeight: "inherit", marginLeft: "2px" }}
