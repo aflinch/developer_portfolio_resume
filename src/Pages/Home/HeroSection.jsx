@@ -49,7 +49,7 @@ export default function HeroSection() {
                     <NavLink
                         onClick={closeMenu}
                         activeClass="navbar-active-content"
-                        to="/ContactMe"
+                        to="/Contact"
                         className="btn btn-primary">
                         Contact Me
                     </NavLink>
