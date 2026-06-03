@@ -103,6 +103,7 @@ export default function SkillsSection() {
                 </div>
                 {showModel && <SkillsModel
                     skill={selectedSkill}
+                    iconComponent={iconMap[selectedSkill.title]}
                     onClose={() => {
                         setShowModel(false);
                         setSelectedSkill(null);
