@@ -13,7 +13,7 @@ function Footer() {
                 </div>
 
                 <div className="footer-contact-section">
-                    <h4 className="footer-contact-title">Contact</h4>
+                    <h4>Contact</h4>
                     <span className="footer-contact-info">
                         <Phone /> (317) 650-5565
                     </span>

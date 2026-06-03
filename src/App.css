@@ -373,30 +373,8 @@ h3 {
     flex: 1;
     gap: 32px;
 }
-.about-section-info {
-    display: flex;
-    flex-direction: column;
-    padding: 21.333px;
-    width: 100%;
-    border-radius: 20px;
-    z-index: 2;
-}
-.about-block-title {
-    color: var(--heading-color);
-    font-size: 23px;
-    line-height: 25px;
-    padding-bottom: 10px;
-    text-decoration: underline;
-}
 .about-section-container {
     width: 100%;
-}
-.about-section-description {
-    color: var(--darkblue);
-    font-size: 17px;
-    line-height: 23px;
-    padding-bottom: 10px;
-    position: relative;
 }
 .about-info-section {
     display: flex;
@@ -406,7 +384,20 @@ h3 {
     flex: 1;
 }
 .about-info-block {
+    color: var(--heading-color);
     margin-bottom: 17px;
+}
+.about-info-block h3 {
+    font-size: 23px;
+    line-height: 25px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.about-info-block p {
+    font-size: 17px;
+    line-height: 23px;
+    padding-bottom: 10px;
+    position: relative;
 }
 .about-info-link {
     background-image: linear-gradient(var(--primary), var(--primary));
@@ -556,7 +547,7 @@ h3 {
 .skills-section-card:hover {
     transform: scale(1.03);
 }
-.skills-section-card-title {
+.skills-section-card-title h3 {
     color: var(--darkblue);
     font-size: 27.667px;
     font-weight: 700;
@@ -710,19 +701,14 @@ h3 {
     display: flex;
     flex-direction: column;
 }
-.footer-contact-info {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
-}
-.footer-contact-title {
+.footer-contact-section h4 {
     margin-bottom: 10.333px;
     color: var(--heading-color);
 }
 .footer-contact-info {
     display: flex;
     color: var(--heading-color);
+    align-items: center;
     gap: 8px;
     margin-bottom: 8.33px;
     font-size: 15px;

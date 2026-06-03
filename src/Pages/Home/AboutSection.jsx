@@ -34,20 +34,20 @@ export default function AboutSection() {
 
                     <div className="about-info-section">
                         <div className="about-info-block">
-                            <h3 className="about-block-title">BIO</h3>
-                            <p className="about-section-description">
+                            <h3>BIO</h3>
+                            <p>
                                 I'm a software engineer who enjoys building applications that are both reliable behind the
                                 scenes and intuitive for the people who use them. Over the past six years at General Motors,
                                 I've had the opportunity to work across the full stack, from modern web interfaces to backend
                                 services and enterprise data platforms.
                             </p>
-                            <p className="about-section-description">
+                            <p>
                                 What I enjoy most about software development is solving complex problems, improving systems,
                                 and continuously learning new technologies. Whether I'm developing APIs, building React applications,
                                 or automating testing workflows, I strive to create solutions that are scalable, maintainable,
                                 and deliver real value to users.
                             </p>
-                            <p className="about-section-description">
+                            <p>
                                 I'm especially interested in software architecture, developer productivity, and the ways
                                 emerging technologies can help teams build better products.
                             </p>
@@ -60,15 +60,15 @@ export default function AboutSection() {
 
 
                         <div className="about-info-block">
-                            <h3 className="about-block-title">BACKGROUND</h3>
-                            <p className="about-section-description">
+                            <h3>BACKGROUND</h3>
+                            <p>
                                 My path into software engineering began at Indiana University, where I studied Informatics,
                                 Computer Science, and Game Design. That blend of technical problem-solving and creative
                                 thinking continues to influence how I approach development today. I later earned a Master
                                 of Science in Software Development from Boston University to deepen my knowledge of software
                                 engineering principles and modern development practices.
                             </p>
-                            <p className="about-section-description">
+                            <p>
                                 Outside of work, I enjoy designing and developing games, exploring new technologies, running
                                 with local groups, and staying involved in the Austin community. Whether I'm working on a
                                 personal project or learning a new framework, I enjoy creating things that challenge me to

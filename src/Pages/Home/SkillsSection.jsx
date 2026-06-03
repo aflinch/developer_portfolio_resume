@@ -88,8 +88,8 @@ export default function SkillsSection() {
                                 setSelectedSkill(item);
                                 setShowModel(true);
                             }}>
-                                <div className="skills-section-card-content">
-                                    <h3 className="skills-section-card-title">{IconComponent ? <IconComponent /> : null} {item.title}</h3>
+                                <div className="skills-section-card-title">
+                                    <h3>{IconComponent ? <IconComponent /> : null} {item.title}</h3>
                                 </div>
                                 <div className="skills-progress-bar">
                                     <div className="skills-progress" style={{ width: `${item.level}%` }}></div>
