@@ -15,10 +15,6 @@ export default function ContactSection() {
                     <h3 className="contact-section-title">Get in <span className="sub-color">Touch</span></h3>
                 </div>
 
-                <div className="contact-form">
-                    <ContactForm />
-                </div>
-
                 <div className="contact-info-section">
                     <h4>Contact Information</h4>
                     <span className="contact-info">
@@ -35,7 +31,11 @@ export default function ContactSection() {
                     <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
                         <Github />
                     </a>
-                </span>
+                    </span>
+                </div>
+
+                <div className="contact-form">
+                    <ContactForm />
                 </div>
             </div>
         </section>
