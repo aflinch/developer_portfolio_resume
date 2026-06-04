@@ -56,16 +56,19 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: var(--off-white);
     z-index: 0;
 }
-.about-section-heading, .skills-section-heading, .projects-section-heading {
+.about-section-heading, .skills-section-heading, .projects-section-heading, .contact-section-heading {
     color: var(--heading-color);
     font-size: 64px;
     font-weight: 700;
     line-height: 70px;
 }
-.about-section-title, .skills-section-title, .projects-section-title {
+.about-section-title, .skills-section-title, .projects-section-title, .contact-section-title {
     color: var(--heading-color);
     font-weight: 400;
     line-height: 30px;
+}
+.about-section-title, .skills-section-title, .contact-section-title {
+    font-size: 44.667px;
 }
 .project-card-link, .btn {
     display: inline-flex;
@@ -366,9 +369,6 @@ h3 {
     flex-direction: column;
     gap: 32px;
 }
-.about-section-title {
-    font-size: 44.667px;
-}
 .about-section-content-column {
     display: flex;
     flex-direction: row;
@@ -490,7 +490,6 @@ h3 {
     text-align: right;
 }
 .skills-section-title {
-    font-size: 44.667px;
     text-align: right;
 }
 .skills-section-container {
@@ -677,7 +676,6 @@ h3 {
     color: var(--card);
     transform: scale(1.025);
 }
-/* Container for the modal projects */
 .projects-skill-modal {
     display: flex;
     gap: 16px;
@@ -692,8 +690,6 @@ h3 {
 .modal-project-card .projects-section-img {
     height: 220px;
 }
-
-
 
 /* Footer */
 .footer-section {
@@ -747,6 +743,21 @@ h3 {
 }
 .footer-section-copyright {
     color: var(--heading-color);
+}
+
+/* Contact */
+.contact-section {
+    display: flex;
+    padding: 105px 12vh 0;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+    background-color: var(--off-white);
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Modal */
