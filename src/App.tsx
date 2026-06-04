@@ -4,11 +4,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home/Homescreen/Home';
 import Contact from './Pages/Contact/Contactscreen/Contact';
+import ScrollToTop from "./Function/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
         <Router>
+            <ScrollToTop />
             <div>
                 <Navbar />
                 <Routes>

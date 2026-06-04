@@ -1,5 +1,5 @@
 import React from 'react';
-import {Phone, Mail} from 'lucide-react';
+import {Phone, Mail, Linkedin} from 'lucide-react';
 import logo from "../data/img/logo.png";
 
 function Footer() {
@@ -20,6 +20,9 @@ function Footer() {
                     <span className="footer-contact-info">
                         <Mail /> alexanderflinchum@gmail.com
                     </span>
+                    <a href="https://www.linkedin.com/in/alexflinchum/" className="footer-contact-info" target="_blank" rel="noopener noreferrer">
+                        <Linkedin />
+                    </a>
                 </div>
             </div>
 

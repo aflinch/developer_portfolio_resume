@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
 import {useEffect, useState} from "react";
 import { Github, Linkedin } from 'lucide-react';
-import {TypewriterTitle} from "../../Components/TypeWriter";
+import {TypewriterTitle} from "../../Function/TypeWriter";
 import heroSectionImg from "../../data/img/hero-section-img.png";
 import leetCodeLogo from "../../data/img/icons8-leetcode-24.png";
 import resumePdf from "../../data/Flinchum, Alex - Resume.pdf";
