@@ -24,22 +24,36 @@ export const ContactForm = () => {
 
     return (
         <form ref={form} onSubmit={sendEmail}>
-            <div>
-                <label>Name</label>
-                <input type="text" name="from_first_name" required />
-                <input type="text" name="from_last_name"/>
+            <div className="form-container">
+                <div className="form-group">
+                    <label>First Name</label>
+                    <input type="text" name="from_first_name" required/>
+                </div>
+
+                <div className="form-group">
+                    <label>Last Name</label>
+                    <input type="text" name="from_last_name" />
+                </div>
             </div>
 
-            <label>Email</label>
-            <input type="email" name="from_email" required />
+            <div className="form-container">
+                <div className="form-group">
+                    <label>Email</label>
+                    <input type="email" name="from_email" required/>
+                </div>
 
-            <label>Phone</label>
-            <input type="phone" name="from_phone"/>
+                <div className="form-group">
+                    <label>Phone</label>
+                    <input type="phone" name="from_phone" />
+                </div>
+            </div>
 
             <label>Message</label>
-            <textarea name="message" required />
+            <textarea name="message" placeholder="Write your message..." required/>
 
-            <input type="submit" value="Send" />
+            <div className="form-submit-container">
+                <input type="submit" value="Send Message" />
+            </div>
         </form>
     );
 };
