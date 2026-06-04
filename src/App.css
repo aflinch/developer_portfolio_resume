@@ -345,7 +345,7 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 85.333px;
+    gap: 40.333px;
     margin-top: 33px;
 }
 .hero-section-img {
@@ -739,6 +739,11 @@ h3 {
 .footer-contact-info svg {
     width: 20px;
     height: 20px;
+}
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
 }
 .divider {
     margin: 26px 0 12px;

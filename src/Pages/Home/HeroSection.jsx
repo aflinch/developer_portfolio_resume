@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
-import {useEffect, useState} from "react";
-import { Github, Linkedin } from 'lucide-react';
+import React, {useEffect, useState} from "react";
+import {Github, Instagram, Linkedin} from 'lucide-react';
 import {TypewriterTitle} from "../../Function/TypeWriter";
 import heroSectionImg from "../../data/img/hero-section-img.png";
 import leetCodeLogo from "../../data/img/icons8-leetcode-24.png";
@@ -58,6 +58,9 @@ export default function HeroSection() {
                 <span className="hero-section-links">
                     <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
                         <Linkedin />
+                    </a>
+                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                        <Instagram />
                     </a>
                     <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
                         <Github />

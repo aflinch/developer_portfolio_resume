@@ -1,5 +1,5 @@
 import React from "react";
-import {Github, Linkedin, Mail, Phone} from "lucide-react";
+import {Github, Linkedin, Mail, Phone, Instagram} from "lucide-react";
 import {ContactForm} from "../../Components/ContactForm";
 
 export default function ContactSection() {
@@ -28,6 +28,9 @@ export default function ContactSection() {
                         <span className="hero-section-links">
                             <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
                                 <Linkedin />
+                            </a>
+                            <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                                <Instagram />
                             </a>
                             <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
                                 <Github />
