@@ -1,0 +1,54 @@
+{
+  "experience": [
+    {
+      "id": "1",
+      "title": "Software Engineer II",
+      "org": "General Motors",
+      "location": "Austin, TX",
+      "tags": ["SpringBoot", ".NET", "React", "GraphQL"],
+      "years": "Feb 2024 - May 2026",
+      "category": "work",
+      "description": "Led automated testing integration within GM's DaaS Java/SpringBoot platform, boosting regression coverage to 90%. Built backend services and IMOS API integrations supporting 500+ plant users, developed reusable GraphQL query patterns, and supported production stability through an OpenShift migration."
+    },
+    {
+      "id": "2",
+      "title": "Software Engineer I, Test Automation",
+      "org": "General Motors",
+      "location": "Austin, TX",
+      "tags": ["Java", "C#", "PostgreSQL"],
+      "years": "Aug 2020 - Feb 2024",
+      "category": "work",
+      "description": "Built reusable Java and C# test automation frameworks from scratch, expanding automated test coverage from 30% to 85% across enterprise backend integrations. Reduced manual regression testing by 60% and accelerated QA cycle times by 2 days per sprint."
+    },
+    {
+      "id": "3",
+      "title": "Software Developer",
+      "org": "General Motors",
+      "location": "Austin, TX",
+      "tags": ["Angular", "JavaScript", "HTML", "CSS"],
+      "years": "Jul 2019 - Aug 2020",
+      "category": "work",
+      "description": "Owned and maintained InDepth Lite, an Angular-based file-processing application supporting 150 users across GM’s analytics platform. Modernized 100% of legacy Angular components during a 3-month framework migration, resolving deprecated dependencies and fixing 15+ frontend UI defects with zero production disruption."
+    },
+    {
+      "id": "4",
+      "title": "B.S. in Informatics (Distinction)",
+      "org": "Indiana University",
+      "location": "Bloomington, IN",
+      "tags": ["Laravel", "Java", "PHP", "C#"],
+      "years": "August 2015 - May 2019",
+      "category": "school",
+      "description": "Graduated with a 3.8/4.0 GPA. Inducted into the Hutton Honors College and the National Society of Collegiate Scholars. Three-time recipient of the Indiana University Founders Scholar award."
+    },
+    {
+      "id": "5",
+      "title": "M.S. in Software Development",
+      "org": "Boston University",
+      "location": "Boston, MA",
+      "tags": ["Python", "Java", "SQL"],
+      "years": "August 2023 - May 2025",
+      "category": "school",
+      "description": "Completed advanced graduate coursework focusing on Software Engineering, Software Design and Patterns, Web Application Development, and Business Database Design and Implementation."
+    }
+  ]
+}
