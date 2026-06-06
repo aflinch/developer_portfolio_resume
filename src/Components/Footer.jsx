@@ -17,10 +17,10 @@ function Footer() {
                 <div className="footer-contact-section">
                     <h4>Contact</h4>
                     <span className="footer-contact-info">
-                        <Phone /> (317) 650-5565
+                        <Phone /> <a href="tel:+13176505565">(317) 650-5565</a>
                     </span>
                     <span className="footer-contact-info">
-                        <Mail /> alexanderflinchum@gmail.com
+                        <Mail /> <a href="mailto:alexanderflinchum@gmail.com">alexanderflinchum@gmail.com</a>
                     </span>
                     <div className="footer-social">
                         <a href="https://www.linkedin.com/in/alexflinchum/" className="footer-contact-info" target="_blank" rel="noopener noreferrer">

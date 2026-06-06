@@ -1,4 +1,6 @@
 import React from "react";
+import experience from "../../data/experience";
+import Timeline from "../../Components/Timeline";
 
 export default function ExperienceSection() {
 
@@ -11,6 +13,16 @@ export default function ExperienceSection() {
                         <hr className="title-divider" />
                     </div>
                     <h3 className="experience-section-title">Knowledge Built <span className="sub-color">Out</span></h3>
+                </div>
+
+                <div className="timeline-container">
+                    <div className="custom-timeline">
+                        {experience?.experience
+                            ?.sort((a, b) => b.id - a.id)
+                            .map((item) => (
+                                <Timeline item={item} />
+                            ))}
+                    </div>
                 </div>
             </div>
         </section>

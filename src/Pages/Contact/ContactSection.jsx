@@ -21,10 +21,10 @@ export default function ContactSection() {
                     <div className="contact-info-section">
                         <h3>Contact Information</h3>
                         <span className="contact-info">
-                            <Phone /> (317) 650-5565
+                            <Phone /> <a href="tel:+13176505565">(317) 650-5565</a>
                         </span>
                         <span className="contact-info">
-                            <Mail /> alexanderflinchum@gmail.com
+                            <Mail /> <a href="mailto:alexanderflinchum@gmail.com">alexanderflinchum@gmail.com</a>
                         </span>
                         <span className="contact-info">
                             <MapPin /> Austin, TX (CST)
