@@ -48,7 +48,6 @@ export default function HeroSection() {
                 <span className="hero-section-buttons">
                     <NavLink
                         onClick={closeMenu}
-                        activeClass="navbar-active-content"
                         to="/Contact"
                         className="btn btn-primary">
                         Contact Me

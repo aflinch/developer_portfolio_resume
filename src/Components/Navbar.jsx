@@ -15,21 +15,14 @@ function Navbar() {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 500) {
+            // Automatically close the mobile menu if screen expands beyond mobile view
+            if (window.innerWidth > 412) {
                 closeMenu();
             }
         };
 
         window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-    useEffect(() => {
-        if(window.innerWidth <= 1200) {
-            closeMenu();
-        }
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     return (
@@ -38,17 +31,25 @@ function Navbar() {
                 <img className="logo" src={logo} alt="Logo" />
                 <h3 className="navbar-title">Alex.</h3>
             </div>
+
+            {/* Hamburger Icon */}
+            <button className="navbar-hamburger" onClick={toggleNav} aria-label="Toggle navigation">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </button>
+
+            {/* Navigation Links */}
             <div className={`navbar-items ${navActive ? "active" : ""}`}>
                 <ul>
                     <li>
                         <NavLink
                             onClick={closeMenu}
                             className={({ isActive }) =>
-                                isActive
-                                    ? "navbar-content navbar-active-content"
-                                    : "navbar-content"
+                                isActive ? "navbar-content navbar-active-content" : "navbar-content"
                             }
-                            to="/">
+                            to="/"
+                        >
                             Home
                         </NavLink>
                     </li>
@@ -56,11 +57,10 @@ function Navbar() {
                         <NavLink
                             onClick={closeMenu}
                             className={({ isActive }) =>
-                                isActive
-                                    ? "navbar-content navbar-active-content"
-                                    : "navbar-content"
+                                isActive ? "navbar-content navbar-active-content" : "navbar-content"
                             }
-                            to="/Experience">
+                            to="/Experience"
+                        >
                             Experience
                         </NavLink>
                     </li>
@@ -68,11 +68,10 @@ function Navbar() {
                         <NavLink
                             onClick={closeMenu}
                             className={({ isActive }) =>
-                                isActive
-                                    ? "navbar-content navbar-active-content"
-                                    : "navbar-content"
+                                isActive ? "navbar-content navbar-active-content" : "navbar-content"
                             }
-                            to="/Projects">
+                            to="/Projects"
+                        >
                             Projects
                         </NavLink>
                     </li>
@@ -80,11 +79,10 @@ function Navbar() {
                         <NavLink
                             onClick={closeMenu}
                             className={({ isActive }) =>
-                                isActive
-                                    ? "navbar-content navbar-active-content"
-                                    : "navbar-content"
+                                isActive ? "navbar-content navbar-active-content" : "navbar-content"
                             }
-                            to="/Contact">
+                            to="/Contact"
+                        >
                             Contact
                         </NavLink>
                     </li>
