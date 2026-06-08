@@ -2,7 +2,12 @@ import React from "react";
 import personal from "../../data/personal";
 import ProjectCard from "../../Components/ProjectCard";
 
-export default function ContactSection() {
+// 1. Corrected function name to match the section's purpose
+export default function RecentProjectsSection() {
+
+    const sortedProjects = personal?.projects
+        ? [...personal.projects].sort((a, b) => b.id - a.id)
+        : [];
 
     return (
         <section id="projectSection" className="all-projects-section">
@@ -15,13 +20,11 @@ export default function ContactSection() {
                     <h3 className="all-projects-section-title"><span className="sub-color">Concepts </span> Made Real</h3>
                 </div>
                 <div className="projects-section-container">
-                    {personal?.projects
-                        ?.sort((a, b) => b.id - a.id)
-                        .map((item) => (
-                            <ProjectCard item={item} />
-                        ))}
+                    {sortedProjects.map((item) => (
+                        <ProjectCard key={item.id} item={item} />
+                    ))}
                 </div>
             </div>
         </section>
-    )
+    );
 }

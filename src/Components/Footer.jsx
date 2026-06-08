@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Mail } from 'lucide-react';
 import { FaLinkedin } from "react-icons/fa6";
-import { SiInstagram } from "react-icons/si";
+import {SiInstagram, SiX} from "react-icons/si";
 import logo from "../data/img/logo.png";
 
 function Footer() {
@@ -17,17 +17,20 @@ function Footer() {
                 <div className="footer-contact-section">
                     <h4>Contact</h4>
                     <span className="footer-contact-info">
-                        <Phone /> (317) 650-5565
+                        <Phone /> <a href="tel:+13176505565">(317) 650-5565</a>
                     </span>
                     <span className="footer-contact-info">
-                        <Mail /> alexanderflinchum@gmail.com
+                        <Mail /> <a href="mailto:alexanderflinchum@gmail.com">alexanderflinchum@gmail.com</a>
                     </span>
                     <div className="footer-social">
                         <a href="https://www.linkedin.com/in/alexflinchum/" className="footer-contact-info" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin />
                         </a>
-                        <a href=" " className="footer-contact-info" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/determineddodo/" className="footer-contact-info" target="_blank" rel="noopener noreferrer">
                             <SiInstagram />
+                        </a>
+                        <a href="https://x.com/DeterminedDodo" className="footer-contact-info" target="_blank" rel="noopener noreferrer">
+                            <SiX />
                         </a>
                     </div>
                 </div>

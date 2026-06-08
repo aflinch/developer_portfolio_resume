@@ -1,7 +1,6 @@
 import React from 'react';
 import { Github } from "lucide-react";
 
-// Added showTags and showLink as optional props with default values of true
 function ProjectCard({ item, showTags = true, showDescription= true, showLink = true}) {
     return (
         <div className="projects-section-card">
@@ -25,7 +24,6 @@ function ProjectCard({ item, showTags = true, showDescription= true, showLink = 
                     <p className="projects-section-card-description">{item.description}</p>
                 )}
 
-                {/* Condition checks if showLink is true and url is valid */}
                 {showLink && item.url && item.url !== "none" && (
                     <a href={item.url} target="_blank" rel="noreferrer" className="project-card-link">
                         <Github /> View in Github

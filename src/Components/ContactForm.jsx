@@ -1,8 +1,10 @@
-import React, { useRef } from 'react';
+import React, {useRef, useState} from 'react';
 import emails from '@emailjs/browser';
 
 export const ContactForm = () => {
     const form = useRef();
+    const [isSent, setIsSent] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -15,45 +17,62 @@ export const ContactForm = () => {
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    setIsSent(true);
+                    setErrorMessage('');
+                    form.current.reset();
+
+                    setTimeout(() => {
+                        setIsSent(false);
+                    }, 3000);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
+                    setErrorMessage('Something went wrong. Please try again.');
+
+                    setTimeout(() => {
+                        setIsSent(false);
+                    }, 3000);
                 },
             );
     };
 
     return (
-        <form ref={form} onSubmit={sendEmail}>
-            <div className="form-container">
-                <div className="form-group">
-                    <label>First Name</label>
-                    <input type="text" name="from_first_name" required/>
+        <div>
+
+            <form ref={form} onSubmit={sendEmail}>
+                <div className="form-container">
+                    <div className="form-group">
+                        <label>First Name</label>
+                        <input type="text" name="from_first_name" required/>
+                    </div>
+
+                    <div className="form-group">
+                        <label>Last Name</label>
+                        <input type="text" name="from_last_name" />
+                    </div>
                 </div>
 
-                <div className="form-group">
-                    <label>Last Name</label>
-                    <input type="text" name="from_last_name" />
+                <div className="form-container">
+                    <div className="form-group">
+                        <label>Email</label>
+                        <input type="email" name="from_email" required/>
+                    </div>
+
+                    <div className="form-group">
+                        <label>Phone</label>
+                        <input type="phone" name="from_phone" />
+                    </div>
                 </div>
-            </div>
 
-            <div className="form-container">
-                <div className="form-group">
-                    <label>Email</label>
-                    <input type="email" name="from_email" required/>
+                <label>Message</label>
+                <textarea name="message" placeholder="Write your message..." required/>
+
+                <div className="form-submit-container">
+                    {isSent && <p className="success">Message sent successfully!</p>}
+                    {errorMessage && <p className="fail">{errorMessage}</p>}
+                    <input type="submit" value="Send Message" />
                 </div>
-
-                <div className="form-group">
-                    <label>Phone</label>
-                    <input type="phone" name="from_phone" />
-                </div>
-            </div>
-
-            <label>Message</label>
-            <textarea name="message" placeholder="Write your message..." required/>
-
-            <div className="form-submit-container">
-                <input type="submit" value="Send Message" />
-            </div>
-        </form>
+            </form>
+        </div>
     );
 };

@@ -1,9 +1,11 @@
 import React from "react";
 import data from '../../data/index.json';
+import info from '../../data/personal.js';
 import {NavLink} from "react-router-dom";
 
 export default function AboutSection() {
     const totalSkillsCount = data?.skills?.length || 0;
+    const totalProjectsCount = info?.projects?.length || 0;
 
     return (
         <section id="aboutMe" className="about-section">
@@ -30,6 +32,10 @@ export default function AboutSection() {
                             <h2>{totalSkillsCount}+</h2>
                             <p>Technical Skills</p>
                         </div>
+                        <div className="stat-box">
+                            <h2>{totalProjectsCount}+</h2>
+                            <p>Projects</p>
+                        </div>
                     </div>
 
                     <div className="about-info-section">
@@ -52,7 +58,7 @@ export default function AboutSection() {
                             </p>
                             <NavLink
                                 className="about-info-link"
-                                to="/MyResume">
+                                to="/Experience">
                                 LEARN MORE
                             </NavLink>
                         </div>

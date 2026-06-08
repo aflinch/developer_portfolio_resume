@@ -48,7 +48,6 @@ export default function HeroSection() {
                 <span className="hero-section-buttons">
                     <NavLink
                         onClick={closeMenu}
-                        activeClass="navbar-active-content"
                         to="/Contact"
                         className="btn btn-primary">
                         Contact Me
@@ -59,7 +58,7 @@ export default function HeroSection() {
                     <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
                     </a>
-                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/determineddodo/" className="link" target="_blank" rel="noopener noreferrer">
                         <SiInstagram />
                     </a>
                     <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
