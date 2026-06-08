@@ -1,7 +1,7 @@
 import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa6";
-import { SiGithub, SiInstagram } from "react-icons/si";
+import { SiX, SiInstagram } from "react-icons/si";
 import {ContactForm} from "../../Components/ContactForm";
 
 export default function ContactSection() {
@@ -37,8 +37,8 @@ export default function ContactSection() {
                             <a href=" " className="link" target="_blank" rel="noopener noreferrer">
                                 <SiInstagram />
                             </a>
-                            <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
-                                <SiGithub />
+                            <a href="https://x.com/DeterminedDodo" className="link" target="_blank" rel="noopener noreferrer">
+                                <SiX />
                             </a>
                         </span>
                     </div>
