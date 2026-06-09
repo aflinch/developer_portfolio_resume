@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
-import personal from "../data/personal";
+import personal from "../data/personal.json";
 import ProjectCard from "./ProjectCard";
 import { NavLink } from "react-router-dom";
 

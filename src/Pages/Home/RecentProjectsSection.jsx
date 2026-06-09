@@ -1,4 +1,4 @@
-import personal from '../../data/personal.js';
+import personal from '../../data/personal.json';
 import React from "react";
 import ProjectCard from "../../Components/ProjectCard";
 

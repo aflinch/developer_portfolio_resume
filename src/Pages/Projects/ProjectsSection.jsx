@@ -1,8 +1,7 @@
 import React from "react";
-import personal from "../../data/personal";
+import personal from "../../data/personal.json";
 import ProjectCard from "../../Components/ProjectCard";
 
-// 1. Corrected function name to match the section's purpose
 export default function RecentProjectsSection() {
 
     const sortedProjects = personal?.projects

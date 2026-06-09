@@ -1,12 +1,8 @@
-import project1Img from "./img/projects/project-1.png";
-import project2Img from "./img/projects/project-2.png";
-import project3Img from "./img/projects/project-3.png";
-
-const personal = {
+{
   "projects": [
     {
       "id": "1",
-      "src": project1Img,
+      "src": "https://alexanderportfolioassets.blob.core.windows.net/images/project-1.png",
       "title": "Course Management System",
       "tags": ["Java", "UML"],
       "description": "Engineered class hierarchies and reusable interfaces to model complex academic workflows.",
@@ -14,7 +10,7 @@ const personal = {
     },
     {
       "id": "2",
-      "src": project2Img,
+      "src": "https://alexanderportfolioassets.blob.core.windows.net/images/project-2.png",
       "title": "Video Game Collection Database",
       "tags": ["SQL", "ERD"],
       "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
@@ -22,13 +18,19 @@ const personal = {
     },
     {
       "id": "3",
-      "src": project3Img,
+      "src": "https://alexanderportfolioassets.blob.core.windows.net/images/project-3.png",
       "title": "Developer Portfolio & Resume",
       "tags": ["Azure", "React", "JavaScript", "CSS"],
       "description": "A highly interactive personal portfolio website featuring responsive layouts, smooth component transitions, and dynamic routing to showcase engineering projects.",
       "url": "https://github.com/aflinch/react-resume-alex_flinchum"
+    },
+    {
+      "id": "4",
+      "src": "https://alexanderportfolioassets.blob.core.windows.net/images/project-4.png",
+      "title": "FitQuest Backend API",
+      "tags": ["GO", "GraphQL", "MongoDB", "Azure"],
+      "description": "A high-performance backend API featuring a single-endpoint GraphQL architecture to eliminate over-fetching for rapid MongoDB document retrieval of workout data.",
+      "url": "https://github.com/aflinch/fitquest-backend"
     }
   ]
-};
-
-export default personal;
+}
