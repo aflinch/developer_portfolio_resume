@@ -1,6 +1,6 @@
 import React from "react";
 import data from '../../data/index.json';
-import info from '../../data/personal.js';
+import info from '../../data/personal.json';
 import {NavLink} from "react-router-dom";
 
 export default function AboutSection() {
