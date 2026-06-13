@@ -7,7 +7,8 @@
       "location": "Bloomington, IN",
       "tags": ["Laravel", "Python", "Java", "PHP", "C#", "SQL", "Unity", "Unreal Engine"],
       "level": 100,
-      "years": "August 2015 - May 2019",
+      "start": "August 2015",
+      "end": "May 2019",
       "category": "school",
       "description": "Graduated with a 3.8/4.0 GPA, specializing in Software Engineering and Enterprise Systems Design with a strong academic emphasis on Data Structures and Discrete Structures.\nBuilt advanced full-stack capstone projects utilizing Java, C#, and SQL, integrating core principles from Human-Computer Interaction (HCI), Interaction Design, and responsive Web Design.\nInducted into the Hutton Honors College and recognized as a three-time recipient of the Indiana University Founders Scholar award for sustained academic excellence."
     },
@@ -18,7 +19,8 @@
       "location": "Austin, TX",
       "tags": ["Angular", "JavaScript", "HTML", "CSS", "TypeScript", "Git", "Jira"],
       "level": 100,
-      "years": "Jul 2019 - Aug 2020",
+      "start": "July 2019",
+      "end": "August 2020",
       "category": "work",
       "description": "Owned end-to-end frontend development and UI maintenance for InDepth Lite, a business-critical file-processing application utilized daily by 150+ data analysts across GM’s global analytics platform.\nSpearheaded a comprehensive 3-month framework migration that successfully modernized 100% of legacy AngularJS components to enterprise Angular, drastically improving application performance and long-term maintainability.\nSystematically diagnosed and resolved deep-rooted dependency bottlenecks and 15+ complex UI bugs, resulting in a snappier user experience and maintaining zero production downtime during deployment phases."
     },
@@ -29,7 +31,8 @@
       "location": "Austin, TX",
       "tags": ["Java", "C#", "PostgreSQL", "Git", "Jira"],
       "level": 100,
-      "years": "Aug 2020 - Feb 2024",
+      "start": "August 2020",
+      "end": "February 2024",
       "category": "work",
       "description": "Designed, developed, and deployed robust, scalable test automation frameworks built completely from the ground up utilizing Java and C#.\nTargeted cross-platform backend data pipelines and PostgreSQL instances, successfully scaling automated test regression coverage from a legacy baseline of 30% to a comprehensive 85% across all enterprise backend integrations.\nNeutralized recurring deployment risks and delivery bottlenecks, reducing manual QA testing overhead by 60% and shortening delivery cycles by 2 full days per development sprint."
     },
@@ -40,7 +43,8 @@
       "location": "Boston, MA",
       "tags": ["Python", "Java", "React", "SQL", "Git"],
       "level": 100,
-      "years": "August 2023 - May 2025",
+      "start": "August 2023",
+      "end": "May 2025",
       "category": "school",
       "description": "Completed a rigorous graduate curriculum focused on advanced software engineering methodologies, data structures, algorithm optimization, and secure web application architecture.\nDeep-dived into advanced Enterprise Architecture patterns and core software design principles, including Creational, Structural, and Behavioral design patterns.\nDeveloped a robust portfolio of engineering projects, focusing on optimizing complex business database schemas, writing advanced SQL performance-tuning scripts, and building distributed, reliable software systems using Python and Java."
     },
@@ -51,7 +55,8 @@
       "location": "Austin, TX",
       "tags": ["SpringBoot", "PostgreSQL", ".NET", "React", "GraphQL", "C#", "Java", "Git", "Jira"],
       "level": 100,
-      "years": "Feb 2024 - May 2026",
+      "start": "February 2024",
+      "end": "May 2026",
       "category": "work",
       "description": "Architected and implemented enterprise-level automated testing frameworks within GM’s high-throughput DaaS (Data as a Service) ecosystem, driving Java and SpringBoot regression coverage to a resilient 90%.\nEngineered secure, high-availability backend microservices and IMOS API integrations that directly support and drive daily operations for 500+ manufacturing plant power users.\nDesigned performance-optimized, reusable GraphQL query and mutation schemas to streamline frontend data fetching, while ensuring system stability and zero-downtime cluster configurations throughout a large-scale cloud migration to Red Hat OpenShift."
     }

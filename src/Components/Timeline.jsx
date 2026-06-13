@@ -14,7 +14,7 @@ function Timeline({ item }) {
 
             <div className="timeline-meta-column">
                 <h3>{item.org}</h3>
-                <h4>{item.years}</h4>
+                <h4>{item.start} - {item.end ?? "Present"}</h4>
                 <h4>{item.location}</h4>
             </div>
 

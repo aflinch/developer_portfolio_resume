@@ -4,8 +4,13 @@ import Timeline from "../../Components/Timeline";
 
 export default function ExperienceSection() {
 
+    const parseDate = (str) => {
+        const [month, year] = str.split(" ");
+        return new Date(`${month} 1, ${year}`);
+    };
+
     const sortedExperience = experience?.experience
-        ? [...experience.experience].sort((a, b) => b.id - a.id)
+        ? [...experience.experience].sort((a, b) => parseDate(b.start) - parseDate(a.start))
         : [];
 
     return (
