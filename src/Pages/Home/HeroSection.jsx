@@ -27,7 +27,7 @@ export default function HeroSection() {
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, [closeMenu]); // FIX 3: Added closeMenu dependency
+    }, [closeMenu]);
 
     useEffect(() => {
         if (window.innerWidth <= 1200) {
@@ -65,7 +65,7 @@ export default function HeroSection() {
                     <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
                         <SiGithub />
                     </a>
-                    <a href="https://leetcode.com/u/allflinch/" className="link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://leetcode.com/u/aflinch/" className="link" target="_blank" rel="noopener noreferrer">
                         <SiLeetcode />
                     </a>
                 </span>
